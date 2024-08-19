@@ -1,11 +1,10 @@
+import Header from "./components/Header"
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <div className="bg-main min-h-screen lg:p-10 md:p-5 sm:p-2">
+      <Header />
+    </div>
   )
 }
 

@@ -6,6 +6,13 @@ import { TArticle } from '../types/article';
 const Card = () => {
     const [data, setData] = useState<TArticle[]>([]); 
     useEffect(() => {
+        // const fetchData = async () => {
+        //     const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=YOUR_API_KEY');
+        //     const resData = await response.json();
+        //     setData(resData.articles);
+        // }
+
+        // fetchData();
         setData(articles);
     })
     if (!data) {

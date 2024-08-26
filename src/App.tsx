@@ -1,10 +1,19 @@
+import ArticlePage from "./components/ArticlePage";
+import Card from "./components/Card"
 import Header from "./components/Header"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
 
   return (
-    <div className="bg-main min-h-screen lg:p-10 md:p-5 sm:p-2">
+
+    <Router>    
       <Header />
-    </div>
+      <Routes>
+        <Route path="/" element={<Card />} />
+        <Route path="/article/:id" element={<ArticlePage />} />
+      </Routes>
+    </Router>
   )
 }
 

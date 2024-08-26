@@ -1,8 +1,11 @@
 
 const Header = () => {
     return (
-        <div className="flex justify-center">
-            <h1 className="text-3xl font-bold flex justify-center text-mkee2 items-center">Top Tesla headlines </h1>
+        <div className="flex justify-between px-16 py-5 mb-10 bg-mkee2 font-bold text-main">
+            <div>Mkee News</div>
+            <a href="https://github.com/mokamaleldin/News">
+                GitHub clone
+            </a>
         </div>
     )
 }

@@ -3,14 +3,14 @@ import Card from "./components/Card"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-
   return (
-
     <Router>    
-      <Routes>
-        <Route path="/" element={<Card />} />
-        <Route path="/article/:id" element={<ArticlePage />} />
-      </Routes>
+      <div className="mx-16">
+        <Routes>
+          <Route path="/" element={<Card />} />
+          <Route path="/article/:slug" element={<ArticlePage />} />
+        </Routes>
+      </div>
     </Router>
   )
 }

@@ -1,6 +1,5 @@
-import ArticlePage from "./components/ArticlePage";
+import ArticlePage from "./pages/ArticlePage";
 import Card from "./components/Card"
-import Header from "./components/Header"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
   return (
 
     <Router>    
-      <Header />
       <Routes>
         <Route path="/" element={<Card />} />
         <Route path="/article/:id" element={<ArticlePage />} />
